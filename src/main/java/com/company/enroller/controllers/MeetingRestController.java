@@ -40,7 +40,7 @@ public class MeetingRestController {
             return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
 
-        return new ResponseEntity<Meeting>(HttpStatus.OK);
+        return new ResponseEntity<Meeting>(meeting, HttpStatus.OK);
     }
 
     @RequestMapping(value = "", method = RequestMethod.POST)
